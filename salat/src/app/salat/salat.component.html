@@ -1,0 +1,71 @@
+
+<br>
+<h1 class="row justify-content-center">مواقيت الصلاة</h1> 
+<h3 class="row justify-content-center">{{today | date:'medium' }}</h3>
+<br>
+<table class="table">
+  <tbody>
+    <tr>
+      <td>
+        <div class="card" style="width: 80%">
+          <img src="https://cdn.futura-sciences.com/buildsv6/images/wide1920/e/9/7/e97de28f43_103803_mosquee-bleue-istanbul.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">الفجر</h5>
+            <p class="card-text">{{salats[0].fajr}}</p>
+            <a href="#" class="btn btn-primary">{{this.fajrOut}}</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card" style="width: 80%">
+          <img src="https://cdn.futura-sciences.com/buildsv6/images/wide1920/e/9/7/e97de28f43_103803_mosquee-bleue-istanbul.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">الشروق</h5>
+            <p class="card-text">{{ salats[0].shurooq }}</p>
+            <button class="btn btn-primary">{{this.shurooqOut}}</button>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card" style="width: 80%">
+          <img src="https://cdn.futura-sciences.com/buildsv6/images/wide1920/e/9/7/e97de28f43_103803_mosquee-bleue-istanbul.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">الظهر</h5>
+            <p class="card-text">{{ salats[0].dhuhr }}</p>
+            <a href="#" class="btn btn-primary">{{this.dhuhrOut}}</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card" style="width: 80%">
+          <img src="https://cdn.futura-sciences.com/buildsv6/images/wide1920/e/9/7/e97de28f43_103803_mosquee-bleue-istanbul.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">العصر</h5>
+            <p class="card-text">{{ salats[0].asr }}</p>
+            <a href="#" class="btn btn-primary">{{this.asrOut}}</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card" style="width: 80%">
+          <img src="https://cdn.futura-sciences.com/buildsv6/images/wide1920/e/9/7/e97de28f43_103803_mosquee-bleue-istanbul.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">االمغرب</h5>
+            <p class="card-text">{{ salats[0].maghrib }}</p>
+            <a href="#" class="btn btn-primary">{{this.maghribOut}}</a>
+          </div>
+        </div>
+      </td>
+      <td>
+        <div class="card" style="width: 80%">
+          <img src="https://cdn.futura-sciences.com/buildsv6/images/wide1920/e/9/7/e97de28f43_103803_mosquee-bleue-istanbul.jpg" class="card-img-top" alt="..." />
+          <div class="card-body">
+            <h5 class="card-title">العشاء</h5>
+            <p class="card-text">{{ salats[0].isha }}</p>
+            <a href="#" class="btn btn-primary">{{this.ishaOut}}</a>
+          </div>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
